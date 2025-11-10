@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Firoona - Storyboard Drawing App</title>
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firoona - iOS Storyboard Drawing App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
+<body class="bg-gray-50 text-gray-900">
 
-<!-- Hero -->
-<section class="text-center py-16 bg-gradient-to-b from-indigo-500 to-purple-600 text-white">
-    <img src="Firoona_IOS_ICON.png" alt="Firoona Icon" class="mx-auto w-24 h-24 rounded-lg mb-4">
-    <h1 class="text-4xl font-bold mb-2">Firoona</h1>
-    <p class="text-lg max-w-xl mx-auto">Storyboard your ideas, sketches, and animations with ease. Create, plan, and visualize your story scene by scene.</p>
-</section>
-
-<!-- About -->
-<section class="py-16 px-4 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-bold mb-4">About Firoona</h2>
-    <p class="mb-2">Firoona is a versatile storyboard drawing app for iOS, designed for filmmakers, game developers, and creatives. Plan your scenes, sketch ideas, and organize your storyboards effortlessly.</p>
-    <p>Features include multiple scenes, onion skinning, easy project management, and export options for your storyboard images.</p>
-</section>
-
-<!-- FAQ -->
-<section class="py-16 max-w-4xl mx-auto px-4">
-    <h2 class="text-2xl font-bold mb-6">FAQ</h2>
-    <div class="space-y-4">
-        <div>
-            <h3 class="font-semibold">Can I export my scenes?</h3>
-            <p>Absolutely. Each scene can be exported as a high-resolution image to share or use in your projects.</p>
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="max-w-4xl mx-auto py-6 px-4">
+            <h1 class="text-3xl font-bold">Firoona</h1>
+            <p class="mt-2 text-gray-600">iOS Storyboard Drawing App for film, game, and animation design.</p>
         </div>
-        <div>
-            <h3 class="font-semibold">Does it sync across devices?</h3>
-            <p>Yes, Firoona can sync your projects across your iPhone, iPad, and Mac using iCloud.</p>
-        </div>
-        <div>
-            <h3 class="font-semibold">What devices are supported?</h3>
-            <p>Firoona works on iPhone, iPad, and Mac running the latest iOS/macOS versions.</p>
-        </div>
-    </div>
-</section>
+    </header>
 
-<!-- Footer -->
-<footer class="py-8 text-center text-gray-500">
-    <p>Made with ❤️ for creatives. <a href="https://github.com/yourusername/Firona" class="text-indigo-500 hover:underline">GitHub Repo</a></p>
-</footer>
+    <!-- App Icon & Description -->
+    <section class="max-w-4xl mx-auto py-16 px-4 text-center">
+        <img src="Firoona_IOS_ICON.png" alt="Firoona Icon" class="mx-auto w-32 h-32 rounded-xl shadow-lg">
+        <h2 class="text-2xl font-bold mt-6">What is Firoona?</h2>
+        <p class="mt-4 text-gray-700">Firoona allows you to draw your storyboards, plan scenes, and design game or film visuals on your iPhone or iPad. Easy to use, with scene previews, onion skinning, and export features.</p>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <img src="screenshot1.png" alt="Screenshot 1" class="rounded-lg shadow">
+            <img src="screenshot2.png" alt="Screenshot 2" class="rounded-lg shadow">
+            <img src="IMG_2325.png" alt="Screenshot 3" class="rounded-lg shadow">
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-4xl mx-auto py-16 px-4">
+        <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+            <div>
+                <h3 class="font-semibold">Which devices does Firoona support?</h3>
+                <p class="text-gray-700">Firoona runs on iPhone and iPad running iOS 17 or later. macOS support is coming soon.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">Can I sync my projects across devices?</h3>
+                <p class="text-gray-700">Yes, Firoona uses iCloud to keep your projects synced across all your Apple devices signed in with the same Apple ID.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">How do I export my storyboard scenes?</h3>
+                <p class="text-gray-700">You can export individual scenes or all scenes as images from within the app. Each scene is exported with a filename containing your project name and scene number.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support -->
+    <section class="py-16 max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-4">Support</h2>
+        <p>If you have any questions or need assistance, please contact us at:</p>
+        <p class="mt-2"><strong>Email:</strong> <a href="mailto:boxful_flock.5t@icloud.com" class="text-blue-600 hover:underline">boxful_flock.5t@icloud.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 text-center text-gray-500">
+        &copy; 2025 Firoona. All rights reserved.
+    </footer>
 
 </body>
 </html>
