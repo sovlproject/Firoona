@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firona - Storyboard & Sketch</title>
+    <title>Firona: 2D Animation Maker | Hand-Drawn Flipbooks</title>
+    <meta name="description" content="The professional 2D animation maker for iPhone and iPad. Create hand-drawn flipbooks, animate frame-by-frame, and export MP4 videos.">
+    <meta name="keywords" content="2d animation maker, animation app, flipbook maker, draw cartoons, frame by frame animation">
 
-
-    <!-- Favicon for browsers (16x16 and 32x32 will be auto-scaled from 48x48) -->
-<link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
-<link rel="shortcut icon" href="android-icon-192.png" type="image/png">
-
-<!-- Android / PWA / larger favicon -->
-<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192.png">
-
-<!-- Apple touch icons for iOS -->
-<link rel="apple-touch-icon" sizes="180x180" href="Firoona_IOS_ICON.png">
-<link rel="apple-touch-icon" sizes="1024x1024" href="Firoona_IOS_ICON.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+    <link rel="shortcut icon" href="android-icon-192.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Firoona_IOS_ICON.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="Firoona_IOS_ICON.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -23,29 +19,18 @@
         body { font-family: 'Inter', sans-serif; }
         .handwritten { font-family: 'Architects Daughter', cursive; }
         
-        /* Storyboard Grid Background */
+        /* Animation Grid Background */
         .grid-bg {
             background-color: #ffffff;
             background-image: radial-gradient(#d1d5db 1px, transparent 1px);
             background-size: 20px 20px;
         }
 
-        /* Rough "Sketchy" Border */
         .sketch-border {
             border: 3px solid #1a1a1a;
             border-radius: 4px 12px 4px 14px / 12px 4px 14px 4px;
         }
 
-        .sketch-button {
-            transition: transform 0.2s ease;
-            border: 2px solid #000;
-            border-radius: 8px 3px 10px 5px;
-        }
-        .sketch-button:hover {
-            transform: scale(1.05) rotate(-1deg);
-        }
-
-        /* App Store Button Styling */
         .app-store-btn {
             background-color: #000;
             color: white;
@@ -54,7 +39,9 @@
             display: inline-flex;
             align-items: center;
             text-decoration: none;
+            transition: transform 0.2s ease;
         }
+        .app-store-btn:hover { transform: scale(1.02); }
     </style>
 </head>
 <body class="grid-bg text-gray-900">
@@ -66,8 +53,8 @@
             <div class="absolute -top-4 -right-10 bg-yellow-200 px-3 py-1 sketch-border handwritten rotate-12">New!</div>
         </div>
         
-        <h1 class="text-6xl font-black mb-4 tracking-tighter">FIRONA</h1>
-        <p class="text-xl handwritten text-gray-600 mb-8 italic">Sketch. Sequence. Storyboard.</p>
+        <h1 class="text-6xl font-black mb-4 tracking-tighter uppercase">FIRONA</h1>
+        <p class="text-xl handwritten text-gray-600 mb-8 italic">Sketch. Animate. Export.</p>
 
         <a href="https://apps.apple.com/app/id6755107335" class="app-store-btn shadow-2xl">
             <svg class="w-8 h-8 mr-3" viewBox="0 0 384 512" fill="currentColor">
@@ -83,19 +70,19 @@
 
 <section class="py-12 px-6">
     <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-10 text-center handwritten">The Workflow</h2>
+        <h2 class="text-3xl font-bold mb-10 text-center handwritten">The Animation Process</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white p-4 sketch-border shadow-lg rotate-1">
-                <img src="iPhone_1.png" alt="Draw" class="w-full h-auto rounded">
-                <p class="mt-4 font-bold text-center border-t-2 border-black pt-2">01. Sketch</p>
+                <img src="iPhone_1.png" alt="Frame by frame drawing" class="w-full h-auto rounded">
+                <p class="mt-4 font-bold text-center border-t-2 border-black pt-2">01. Draw Frames</p>
             </div>
             <div class="bg-white p-4 sketch-border shadow-lg -rotate-1">
-                <img src="iPhone_2.png" alt="Sequence" class="w-full h-auto rounded">
-                <p class="mt-4 font-bold text-center border-t-2 border-black pt-2 text-red-500 underline">02. Sequence</p>
+                <img src="iPhone_2.png" alt="Animation Playback" class="w-full h-auto rounded">
+                <p class="mt-4 font-bold text-center border-t-2 border-black pt-2 text-blue-600 underline">02. Playback & Timing</p>
             </div>
             <div class="bg-white p-4 sketch-border shadow-lg rotate-2">
-                <img src="iPhone_3.png" alt="Export" class="w-full h-auto rounded">
-                <p class="mt-4 font-bold text-center border-t-2 border-black pt-2">03. Export</p>
+                <img src="iPhone_3.png" alt="Video Export" class="w-full h-auto rounded">
+                <p class="mt-4 font-bold text-center border-t-2 border-black pt-2">03. Export MP4 & GIF</p>
             </div>
         </div>
     </div>
@@ -107,15 +94,14 @@
         <div class="space-y-6">
             <details class="group border-b border-gray-700 pb-4">
                 <summary class="text-xl font-bold cursor-pointer list-none flex justify-between items-center group-open:text-yellow-400">
-                    How do I import a project?
+                    How do I import an animation?
                     <span class="text-2xl group-open:rotate-180 transition-transform">+</span>
                 </summary>
-               <p class="mt-2 text-gray-700">
-    <p class="mt-4 text-gray-400 leading-relaxed">
-        Open Firona and go to the Projects screen. Tap <strong>Import Project</strong>,
-        then select a Firona project file <code>.storyboardproj</code> from Files or iCloud Drive.
-        The project will be added with all scenes preserved.
-    </p>
+                <p class="mt-4 text-gray-400 leading-relaxed">
+                    Open Firona and go to the Projects screen. Tap <strong>Import Project</strong>, 
+                    then select a Firona project file from Files or iCloud Drive. 
+                    The project will be added with all animation frames and timing preserved.
+                </p>
             </details>
             
             <details class="group border-b border-gray-700 pb-4">
@@ -123,7 +109,7 @@
                     Which devices are supported?
                     <span class="text-2xl group-open:rotate-180 transition-transform">+</span>
                 </summary>
-                <p class="mt-4 text-gray-400 leading-relaxed">iPhone, iPad, and Mac (Apple Silicon). Apple Pencil is supported where available.</p>
+                <p class="mt-4 text-gray-400 leading-relaxed">Firona is optimized for iPhone and iPad. Apple Pencil is highly recommended for professional frame-by-frame drawing.</p>
             </details>
 
             <details class="group border-b border-gray-700 pb-4">
@@ -131,7 +117,7 @@
                     What export formats are supported?
                     <span class="text-2xl group-open:rotate-180 transition-transform">+</span>
                 </summary>
-                <p class="mt-4 text-gray-400 leading-relaxed">Export individual scenes as PNG, Export as MP4, Export Project, and Export as PDF.</p>
+                <p class="mt-4 text-gray-400 leading-relaxed">Export your work as high-quality <strong>MP4 Video</strong>, <strong>Animated GIFs</strong>, individual frames as PNG, or a <strong>Printable Flipbook (PDF)</strong>.</p>
             </details>
         </div>
     </div>
@@ -139,7 +125,7 @@
 
 <footer class="py-16 bg-white border-t-4 border-black">
     <div class="container mx-auto px-6 text-center">
-        <h3 class="text-2xl font-bold mb-6">Stay Creative</h3>
+        <h3 class="text-2xl font-bold mb-6 italic handwritten">Keep It Moving</h3>
         
         <div class="flex justify-center space-x-8 mb-10">
             <a href="https://www.instagram.com/firona.app" class="hover:text-pink-600 transition-colors">
@@ -153,7 +139,7 @@
             </a>
         </div>
 
-        <p class="text-sm text-gray-500">&copy; 2025 Firona. Made for Artists.</p>
+        <p class="text-sm text-gray-500">&copy; 2025 Firona: 2D Animation Maker. Hand-drawn for artists.</p>
     </div>
 </footer>
 
